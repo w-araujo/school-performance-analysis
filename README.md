@@ -40,19 +40,31 @@ Este arquivo é responsável por criar a interface do usuário utilizando o Stre
 ### 2. Navegue até o Diretório do Projeto
    - Entre no diretório do projeto clonado
 
-### 3. Execute o Script de Treinamento
-   - O primeiro passo para rodar o projeto é treinar o modelo e gerar o arquivo `model.pkl`, além da imagem `scatter_plot.png` com o gráfico de dispersão. Execute o seguinte comando:
+### 3. Crie o ambiente virtual 
+   - Primeiro crie o ambiente virtual
+     ```bash
+     python3 -m venv env
+     ```
+
+### 4. Ative o ambiente virtual 
+   - Depois ative o ambiente virtual
+     ```bash
+     source env/bin/activate
+     ```
+
+### 5. Execute o Script de Treinamento
+   - Para executar o projeto primeiro passo é treinar o modelo e gerar o arquivo `model.pkl`, além da imagem `scatter_plot.png` com o gráfico de dispersão. Execute o seguinte comando:
      ```bash
      python src/model.py
      ```
 
-### 4. Abra a Interface do Usuário
+### 6. Abra a Interface do Usuário
    - Após treinar o modelo, você pode abrir a interface do usuário utilizando o Streamlit. Execute o comando abaixo:
      ```bash
      streamlit run src/app.py
      ```
 
-### 5. Interaja com a Aplicação
+### 7. Interaja com a Aplicação
    - Acesse a interface do usuário no seu navegador (normalmente em `http://localhost:8501`) para visualizar e interagir com as previsões do modelo.
 
 ## 📝 License
